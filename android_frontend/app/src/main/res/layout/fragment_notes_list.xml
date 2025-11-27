@@ -51,6 +51,7 @@
         android:src="@drawable/ic_add"
         app:tint="@android:color/white"
         app:backgroundTint="@color/ocean_primary"
+        app:rippleColor="@color/ocean_secondary"
         app:layout_anchorGravity="bottom|end"
         android:layout_margin="16dp"
         android:layout_gravity="bottom|end" />

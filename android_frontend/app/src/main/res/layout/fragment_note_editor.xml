@@ -59,6 +59,7 @@
             android:layout_height="wrap_content"
             android:text="@string/save"
             app:backgroundTint="@color/ocean_primary"
+            app:rippleColor="@color/ocean_secondary"
             android:textColor="@android:color/white"
             android:enabled="false"/>
 

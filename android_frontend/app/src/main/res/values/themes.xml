@@ -2,7 +2,7 @@
 <resources>
     <!-- App theme using Material3 DayNight to support dark mode -->
     <style name="Theme.OceanProfessional" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Material color roles -->
+        <!-- Monochrome Material color roles -->
         <item name="colorPrimary">@color/ocean_primary</item>
         <item name="colorOnPrimary">@android:color/white</item>
         <item name="colorSecondary">@color/ocean_secondary</item>
@@ -13,7 +13,6 @@
         <!-- Surfaces and backgrounds -->
         <item name="colorSurface">@color/ocean_surface</item>
         <item name="colorOnSurface">@color/ocean_text</item>
-        <!-- Material3 supports colorSurface; colorBackground is not a public Material attr -->
         <item name="android:windowBackground">@color/ocean_background</item>
 
         <!-- System bars -->
