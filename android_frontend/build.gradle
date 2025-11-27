@@ -1,0 +1,23 @@
+/**
+ * PUBLIC_INTERFACE
+ * Top-level build script configuring repositories and common plugin versions.
+ */
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        // Use a stable Android Gradle Plugin compatible with Gradle 8.7
+        classpath "com.android.tools.build:gradle:8.5.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}

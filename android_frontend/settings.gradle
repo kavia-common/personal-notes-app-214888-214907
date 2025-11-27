@@ -1,0 +1,22 @@
+/**
+ * PUBLIC_INTERFACE
+ * Conventional Gradle settings for the Android app multiproject.
+ * The experimental declarative ecosystem plugin is disabled to avoid runtime errors.
+ * Standard Gradle will discover conventional build files within subprojects.
+ */
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "example-android-app"
+
+// Recognize modules
+include("app")
+include("list")
+include("utilities")
+
+// Note: settings.gradle.dcl is retained for reference but not applied to avoid plugin errors.
