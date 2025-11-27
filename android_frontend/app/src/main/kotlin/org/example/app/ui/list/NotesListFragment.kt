@@ -62,13 +62,16 @@ class NotesListFragment : Fragment() {
                 it.title.lowercase().contains(query) || it.content.lowercase().contains(query)
             }
             adapter.submitList(filtered)
-            binding.emptyState.visibility = if (filtered.isEmpty()) View.VISIBLE else View.GONE
+            // When including a layout with ViewBinding, the include generates a binding object.
+            // Use its root view to set visibility.
+            binding.emptyState.root.visibility = if (filtered.isEmpty()) View.VISIBLE else View.GONE
         }
 
         viewModel.notes.observe(viewLifecycleOwner) {
             allNotes = it
             adapter.submitList(it)
-            binding.emptyState.visibility = if (it.isEmpty()) View.VISIBLE else View.GONE
+            // Use the included layout binding's root view for visibility toggling.
+            binding.emptyState.root.visibility = if (it.isEmpty()) View.VISIBLE else View.GONE
         }
 
         viewModel.snackbar.observe(viewLifecycleOwner) { msg ->
