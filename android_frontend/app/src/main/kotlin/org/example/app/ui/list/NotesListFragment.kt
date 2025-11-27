@@ -63,7 +63,7 @@ class NotesListFragment : Fragment() {
             }
             adapter.submitList(filtered)
             // When including a layout with ViewBinding, the include generates a binding object.
-            // Use its root view to set visibility.
+            // Use its root view to set visibility on the included layout.
             binding.emptyState.root.visibility = if (filtered.isEmpty()) View.VISIBLE else View.GONE
         }
 
