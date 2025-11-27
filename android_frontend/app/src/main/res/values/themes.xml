@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.OceanProfessional" parent="Theme.Material3.Light.NoActionBar">
+<resources>
+    <!-- App theme using Material3 DayNight to support dark mode -->
+    <style name="Theme.OceanProfessional" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Material color roles -->
         <item name="colorPrimary">@color/ocean_primary</item>
         <item name="colorOnPrimary">@android:color/white</item>
@@ -8,19 +9,20 @@
         <item name="colorOnSecondary">@android:color/white</item>
         <item name="colorError">@color/ocean_error</item>
         <item name="colorOnError">@android:color/white</item>
+
+        <!-- Surfaces and backgrounds -->
         <item name="colorSurface">@color/ocean_surface</item>
         <item name="colorOnSurface">@color/ocean_text</item>
-        <item name="colorBackground">@color/ocean_background</item>
-        <item name="colorOnBackground">@color/ocean_text</item>
+        <!-- Material3 supports colorSurface; colorBackground is not a public Material attr -->
+        <item name="android:windowBackground">@color/ocean_background</item>
 
         <!-- System bars -->
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
-        <item name="android:windowBackground">@color/ocean_background</item>
 
-        <!-- Components -->
+        <!-- Component defaults -->
         <item name="materialCardViewStyle">@style/OceanCard</item>
         <item name="toolbarStyle">@style/OceanToolbar</item>
     </style>
@@ -32,8 +34,8 @@
 
     <style name="OceanToolbar" parent="Widget.Material3.Toolbar">
         <item name="android:background">@color/ocean_surface</item>
-        <item name="titleTextColor">@color/ocean_text</item>
-        <item name="subtitleTextColor">@color/ocean_text_secondary</item>
-        <item name="navigationIconTint">@color/ocean_text</item>
+        <item name="titleTextColor">?attr/colorOnSurface</item>
+        <item name="subtitleTextColor">?attr/colorOnSurface</item>
+        <item name="navigationIconTint">?attr/colorOnSurface</item>
     </style>
 </resources>

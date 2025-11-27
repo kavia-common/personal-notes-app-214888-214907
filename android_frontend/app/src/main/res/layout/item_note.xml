@@ -19,7 +19,7 @@
         <TextView
             android:id="@+id/title"
             android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-            android:textColor="@color/ocean_text"
+            android:textColor="?attr/colorOnSurface"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Title" />
@@ -28,7 +28,8 @@
             android:id="@+id/content"
             android:layout_marginTop="6dp"
             android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
-            android:textColor="@color/ocean_text_secondary"
+            android:textColor="?attr/colorOnSurface"
+            android:alpha="0.74"
             android:maxLines="3"
             android:ellipsize="end"
             android:layout_width="match_parent"
@@ -43,7 +44,7 @@
             android:layout_marginTop="8dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/delete"
-            android:tint="@color/ocean_error"
+            app:tint="@color/ocean_error"
             android:src="@drawable/ic_delete" />
 
     </LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Night theme inherits DayNight to ensure correct dark role mapping -->
+    <style name="Theme.OceanProfessional" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Keep primary/secondary for consistency; night colors are provided via colors-night -->
+        <item name="colorPrimary">@color/ocean_primary</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/ocean_secondary</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorError">@color/ocean_error</item>
+        <item name="colorOnError">@android:color/white</item>
+
+        <!-- Surfaces and window background -->
+        <item name="colorSurface">@color/ocean_surface</item>
+        <item name="colorOnSurface">@color/ocean_text</item>
+        <item name="android:windowBackground">@color/ocean_background</item>
+
+        <!-- System bars (dark content false by default in night, keep transparent) -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="materialCardViewStyle">@style/OceanCard</item>
+        <item name="toolbarStyle">@style/OceanToolbar</item>
+    </style>
+</resources>

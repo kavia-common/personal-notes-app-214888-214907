@@ -3,6 +3,7 @@
     android:visibility="gone"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="?attr/colorSurface"
     android:paddingTop="40dp"
     android:paddingBottom="40dp"
     android:layout_width="match_parent"

@@ -4,7 +4,7 @@
     android:fillViewport="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ocean_background">
+    android:background="?attr/colorSurface">
 
     <LinearLayout
         android:orientation="vertical"
@@ -53,7 +53,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSave"
-            style="@style/Widget.Material3.Button.Filled"
+            style="@style/Widget.Material3.Button"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

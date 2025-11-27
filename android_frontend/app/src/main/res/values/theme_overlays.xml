@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PUBLIC_INTERFACE -->
+    <!-- Ocean Professional color theme overlay mapping core roles.
+         Can be applied per-view via android:theme or globally later. -->
+    <style name="ThemeOverlay.OceanProfessional" parent="">
+        <item name="colorPrimary">@color/ocean_primary</item>
+        <item name="colorSecondary">@color/ocean_secondary</item>
+        <item name="colorError">@color/ocean_error</item>
+        <item name="colorSurface">@color/ocean_surface</item>
+        <item name="colorOnSurface">@color/ocean_text</item>
+        <item name="android:windowBackground">@color/ocean_background</item>
+    </style>
+</resources>
