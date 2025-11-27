@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ocean Notes</string>
+    <string name="search">Search notes</string>
+    <string name="add_note">Add note</string>
+    <string name="no_notes">No notes yet. Tap + to create one.</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="undo">Undo</string>
+    <string name="snack_deleted">Note deleted</string>
+    <string name="validation_need_title_or_content">Enter a title or some content</string>
+</resources>
